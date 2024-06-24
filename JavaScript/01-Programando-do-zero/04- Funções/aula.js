@@ -1,5 +1,4 @@
 
-
 function sayMyName(name){
     console.log('Your name is '+ name);
     //Não tem retorno, é como um procedimento
