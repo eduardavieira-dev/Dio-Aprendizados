@@ -30,7 +30,7 @@
     /* padding: .3rem .2rem; */
 }
 
-.portifolio li .title.github::before{
+.portifolio li h3.github::before{
     content: '';
     display: inline-block;
     width: 1rem;
