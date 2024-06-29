@@ -1,0 +1,69 @@
+{
+    "name": "Eduarda Vieira",
+    "photo": "https://avatars.githubusercontent.com/u/159597766?v=4",
+    "job": "Estudante",
+    "location": "Belo Horizonte - MG",
+    "phone": "(31) 98949-8921",
+    "email": "email@gmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "HTML",
+          "logo": "https://github.com/eduardavieira-dev/Portifolio-dio-js/blob/main/assets/icons/lenguages/html.svg"
+        },
+        {
+          "name": "CSS",
+          "logo": "https://github.com/eduardavieira-dev/Portifolio-dio-js/blob/main/assets/icons/lenguages/css.svg"
+        },
+        {
+          "name": "JS",
+          "logo": "https://github.com/eduardavieira-dev/Portifolio-dio-js/blob/main/assets/icons/lenguages/javascript.svg"
+        },
+        {
+          "name": "GitHub",
+          "logo": "https://github.com/eduardavieira-dev/Portifolio-dio-js/blob/main/assets/icons/lenguages/github1.svg"
+        }
+      ],
+      "softSkills": [
+        "Comunicação",
+        "Trabalho em equipe",
+        "Dedicação",
+        "Praticidade e objetividade",
+        "Persistência e entusiasmo"
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Inglês (intermediário)",
+      "Francês (iniciante)"
+    ],
+    "portfolio": [
+      {
+        "name": "WebClass - Site FronEnd",
+        "url": "https://eduardavieira-dev.github.io/site",
+        "github": true
+      },
+      {
+        "name": "Reposiório com minha evolução e anotações de estudos de JS",
+        "url": "https://github.com/eduardavieira-dev/Dio-Aprendizados",
+        "github": true
+      }
+    ],
+    "professionalExperience": [
+      {
+        "name": "Desenvolviemento de Sistemas",
+        "period": "Maio 2023- Agosto 2024",
+        "description": "Meu primeiro contato com a programação foi no curso técnico de Desenvolvimento de Sistemas no SENAI-CTTI. Aprendi as bases da programação, principalmente através dos projetos práticos e da metodologia de ensino do SENAI."
+      },
+      {
+        "name": "Engenharia de Software",
+        "period": "Agosto 2024 - Julho 2029",
+        "description": "Iniciei minha graduação em Engenharia de Software na PUC. Durante o curso técnico, decidi permanecer na área de programação e obter uma formação de nível superior para me tornar uma profissional ainda mais capacitada."
+      },
+      {
+        "name": "Formação Java Script / dio.me",
+        "period": "Abril 2024- até o momento",
+        "description": "Durante o primeiro semestre de 2024, dediquei-me a aprender a linguagem de programação JavaScript, da qual pretendo me aperfeiçoar cada vez mais através de projetos e práticas."
+      }
+    ]
+  }
