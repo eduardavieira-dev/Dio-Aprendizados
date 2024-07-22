@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e texto</title>
+    <style>
+        div{
+            margin-bottom: 30px;
+        }
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/rj.jpg');
+            background-size: cover;
+            border: 1px solid blue;
+            overflow: auto;
+        }
+
+        #fixed{
+            background-attachment: fixed;
+            /* dá o efeito paralax, a imagem de fundo fica fixa e continua a mesma enquanto os elementos podem se mover*/
+        }
+        #scroll{
+            background-attachment: scroll;
+            /* o texto se move em cima da imagem */
+        }
+        #local{
+            background-attachment: local;
+            /* a imagem e o texto se movem juntos */
+        }
+        
+        .origin{
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/rj.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 15px dashed palegreen;
+            padding: 30px;
+        }
+
+        #padding-box{
+            background-origin: padding-box;
+        }
+
+        #border-box{
+            background-origin:border-box;
+        }
+
+        #content-box{
+            background-origin: content-box;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <code>backgroound-attachment: fixed</code>
+    <div id="fixed" class="exemplo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptate provident illo mollitia aut quo asperiores, dolorum ipsam fuga ducimus odit dolorem sed nobis sunt neque eum, nisi expedita nostrum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quod, quidem temporibus adipisci esse voluptatum, ullam impedit eligendi recusandae hic voluptatibus deserunt architecto. A, molestias. Quasi rem id inventore ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sequi dolorum. Labore aspernatur laboriosam amet quas sit fugit praesentium, culpa sequi atque voluptate, reiciendis rem distinctio, doloribus ducimus fuga maiores.
+        </p>
+    </div>
+    
+    <code>backgroound-attachment: scroll</code>
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptate provident illo mollitia aut quo asperiores, dolorum ipsam fuga ducimus odit dolorem sed nobis sunt neque eum, nisi expedita nostrum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quod, quidem temporibus adipisci esse voluptatum, ullam impedit eligendi recusandae hic voluptatibus deserunt architecto. A, molestias. Quasi rem id inventore ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sequi dolorum. Labore aspernatur laboriosam amet quas sit fugit praesentium, culpa sequi atque voluptate, reiciendis rem distinctio, doloribus ducimus fuga maiores.
+        </p>
+    </div>
+
+    <code>backgroound-attachment: local</code>
+    <div id="local" class="exemplo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptate provident illo mollitia aut quo asperiores, dolorum ipsam fuga ducimus odit dolorem sed nobis sunt neque eum, nisi expedita nostrum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quod, quidem temporibus adipisci esse voluptatum, ullam impedit eligendi recusandae hic voluptatibus deserunt architecto. A, molestias. Quasi rem id inventore ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sequi dolorum. Labore aspernatur laboriosam amet quas sit fugit praesentium, culpa sequi atque voluptate, reiciendis rem distinctio, doloribus ducimus fuga maiores.
+        </p>
+    </div>
+
+    <code>backgroound-origin: contain</code>
+    <div id="padding-box" class="origin">
+    </div>
+    <code>backgroound-origin: border-box</code>
+    <div id="border-box" class="origin">
+    </div>
+    <code>backgroound-origin: contain</code>
+    <div id="content-box" class="origin">
+    </div>
+    
+</body>
+</html>

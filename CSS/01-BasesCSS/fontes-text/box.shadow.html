@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ex{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #f35fa2;
+            margin: 20px auto;
+            background-color: #ff98c6;
+            border-radius: 30px;
+            
+            box-shadow: inset 10px 15px 20px rgb(157, 111, 248), 5px 5px 50px rgb(255, 0, 123);
+        }
+        
+        img{
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(10px 10px 5px gray);
+        }
+        
+        h2{
+            color: #f35fa2;
+            font-size: 40px;
+            text-align: center;
+            
+            text-shadow: 1px 1px 10px;
+        }
+        .exemplo{
+            opacity: 0.5;
+            
+            background-color: #ff98c6;
+            padding: 20px 30px;
+        }
+        .overflow{
+            background-color: chocolate;
+            border: 3px solid purple;
+            width: 200px;
+            height: 200px;
+            overflow: visible;
+            
+        }
+        #scroll{
+            overflow: scroll;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #auto{
+            overflow: auto;
+        }
+
+        #ex-1{
+            white-space: nowrap;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+    </style>
+    <title>ELementoos box-shadow</title>
+</head>
+<body>
+   <h1> Propriedade <code>box-shadow</code></h1>
+    <div class="ex"></div>  
+
+
+    <code>filter: drop-shadow</code>
+    <img src="../img/pink-coquette-ribbon-bow-watercolor-png.webp" alt="">
+
+    <code>text-shadow</code>
+    <h2>Bem vindo a trilha de cSS na DIO!</h2>
+
+    <code>opacity</code>
+    <div class="exemplo">
+        <h1>Exemplo</h1>
+        <p>Define o nivel de opacidade(transparencia) de um elelmento</p>
+        <img src="../img/pink-coquette-ribbon-bow-watercolor-png.webp" alt="">
+    </div>
+    
+    <code>overflow(transbordar)</code>
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae, porro laudantium nesciunt, praesentium optio omnis consequatur laborum est at pariatur illum iste aperiam! Vel maiores molestiae facere voluptas aliquid!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore possimus obcaecati deleniti quaerat dolorem at velit alias ducimus molestias fugiat beatae veniam ea corporis natus numquam maxime, voluptatibus animi.</p>
+    </div>
+    <br><br><br><br> <br><br><br><br>
+    <code>overflow scroll</code>
+    <div id="scroll" class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae, porro laudantium nesciunt, praesentium optio omnis consequatur laborum est at pariatur illum iste aperiam! Vel maiores molestiae facere voluptas aliquid!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore possimus obcaecati deleniti quaerat dolorem at velit alias ducimus molestias fugiat beatae veniam ea corporis natus numquam maxime, voluptatibus animi.</p>
+    </div>
+    <code>overflow: hidden</code>
+    <div id="hidden" class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae, porro laudantium nesciunt, praesentium optio omnis consequatur laborum est at pariatur illum iste aperiam! Vel maiores molestiae facere voluptas aliquid!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore possimus obcaecati deleniti quaerat dolorem at velit alias ducimus molestias fugiat beatae veniam ea corporis natus numquam maxime, voluptatibus animi.</p>
+    </div>
+    <code>overflow: auto</code>
+    <div id="auto" class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae, porro laudantium nesciunt, praesentium optio omnis consequatur laborum est at pariatur illum iste aperiam! Vel maiores molestiae facere voluptas aliquid!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore possimus obcaecati deleniti quaerat dolorem at velit alias ducimus molestias fugiat beatae veniam ea corporis natus numquam maxime, voluptatibus animi.</p>
+    </div>
+    <code>overflow-x: auto</code>
+    <div id="ex-1" class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae, porro laudantium nesciunt, praesentium optio omnis consequatur laborum est at pariatur illum iste aperiam! Vel maiores molestiae facere voluptas aliquid!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore possimus obcaecati deleniti quaerat dolorem at velit alias ducimus molestias fugiat beatae veniam ea corporis natus numquam maxime, voluptatibus animi.</p>
+    </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efeitos</title>
+    <style>
+      div {
+        margin-bottom: 30px;
+      }
+      .exemplo {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        border: 1px solid plum;
+        color: white;
+        padding: 30px;
+        font-size: 40px;
+        font-weight: 900;
+        background-color: palevioletred;
+        border: 15px dashed lightblue;
+        background-color: #e5e5f7;
+        opacity: 0.8;
+        background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%),
+          linear-gradient(225deg, #444cf7 25%, transparent 25%),
+          linear-gradient(45deg, #4489f7 25%, transparent 25%),
+          linear-gradient(315deg, #585b92 25%, #2f2f7a 25%);
+        background-position: 10px 0, 10px 0, 0 0, 0 0;
+        background-size: 20px 20px;
+        background-repeat: repeat;
+      }
+      
+      #text {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+    
+      #padding-box {
+          background-clip: padding-box;
+        }
+        
+        #border-box {
+            background-clip: border-box;
+        }
+        
+        #content-box {
+            background-clip: content-box;
+        }
+        .efeitos{
+          width: 300px;
+          height: 300px;
+          background-size: cover;
+          border: 15px dashed plum;
+          color: white;
+          padding: 30px;
+          font-size: 40px;
+          font-weight: 900;
+          background-color: rgb(84, 155, 209);
+          background-image: url(./img/bubbles.png);
+          background-blend-mode: overlay;
+          /* tem diversos atributos no blend-mode com resultados diferentes */
+        }
+        </style>
+  </head>
+  <body>
+    <code>backgroound-clip: border-box</code>
+    <div id="border-box" class="exemplo">trilha css</div>
+    <code>backgroound-clip: padding-box</code>
+    <div id="padding-box" class="exemplo">trilha css</div>
+    <code>backgroound-clip: content-box</code>
+    <div id="content-box" class="exemplo">trilha css</div>
+    <code>backgroound-clip: text</code>
+    <div id="text" class="exemplo">trilha css</div>
+    <code>Efeitos</code>
+    <div id="sim" class="efeitos">trilha css</div>
+  </body>
+</html>

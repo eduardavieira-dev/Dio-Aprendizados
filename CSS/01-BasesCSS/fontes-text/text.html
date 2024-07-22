@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-transform: lowercase;
+        }
+        p{
+            padding: 10px;
+            background-color: lavender;
+            text-align: center;
+            text-align: right;
+            text-align: left;
+        }
+
+        h2 + p{
+            text-decoration-line: overline;
+            text-decoration-style: dashed;
+            text-decoration-color: blue ;
+            text-decoration-thickness: 4px;
+        }
+        a{
+            text-decoration: none; 
+        }
+        p{
+            text-indent: 10px;
+        }
+        #exemplo-letter-spacing{
+            letter-spacing: 5px;
+        }
+        #exemplo-word-spacing{
+            word-spacing: 8px;
+        }
+
+        #white-space{
+            white-space: pre-wrap;
+            white-space: break-spaces;
+            white-space: nowrap;
+            white-space: pre;
+            white-space: pre-line;
+            background-color: blueviolet;
+        }
+
+        #break-word{
+            word-wrap: break-word;
+            background-color: aquamarine;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #writing-mode{
+            width: 100px;
+            height: 100px;
+            writing-mode:vertical-rl;
+            writing-mode:vertical-lr;
+        }
+        #overflow{
+            width: 150px;
+            white-space: nowrap;
+            text-overflow: clip;
+            /* esconde o conteudo */
+            text-overflow: hidden;
+            /* adciona os ... no final */
+            text-overflow: ellipsis;
+            text-overflow: string;
+        }
+    </style>
+    <title>Text</title>
+</head>
+<body>
+    <h1>Propriedade <code>text-trasnform</code></h1>
+    <p>É resposável por definir quais caracteres vão estar em maiusculo, minusculo, etc.</p>
+    <br>
+    <h1>Propriedade <code>text-align</code></h1>
+    <p>É resposável por alinhar o texto ao nosso elemento</p>
+    
+    <h2>Propriedade <code>text-decoration</code></h2>
+    <p>Adiciona ou remove linhas no nosso texto, sejam linhas em cima no meio ou embaixo</p>
+    <ul>
+        <li><code>text-decoration-line</code></li>
+        <li><code>text-decoration-style</code></li>
+        <li><code>text-decoration-color</code></li>
+        <li><code>text-decoration-thickness</code></li>
+    </ul>
+    <a href="#">Link de exemplo</a>
+    <br>
+    
+    <h2>Propriedade <code>text-ident</code></h2>
+    <p>Define o recuo da primeira linha do texto. Exemplo:</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quae molestiae recusandae quis accusamus minima asperiores maiores, voluptatibus, sapiente vel repellendus voluptatum! Assumenda nulla reprehenderit neque fugiat quisquam, nesciunt architecto!</p>
+    
+    
+    <h2>Propriedade <code>letter-spacing</code></h2>
+    <p id="exemplo-letter-spacing">Adiciona um  espaçamento a cada CARACTERE do seu texto. Como o mome já diz, espaçamento entre letras</p>
+    <p id="exemplo-word-spacing">Adiciona um  espaçamento a cada PALAVRA do seu texto. Como o mome já diz, espaçamento entre as palavras</p>
+
+    <h3><code>white-space</code></h3>
+    <p id="white-space">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero accusantium quos explicabo ipsum eum ullam! 
+        Dolorem, corporis iste? 
+        Similique sunt, culpa magnam unde sint alias ad perferendis iusto pariatur porro.
+    </p><br>
+    <h3><code>word-wrap</code></h3>
+    <div>
+        <p id="break-word">TrilhaDeCSSJunto</p>
+    </div>
+    <h3><code>writing-mode</code></h3>
+    <p>define a orientação do texto(vertical ou horizontal)</p>
+    <p id="writing-mode">Chega de saudade a realidade</p>
+    <br>
+    <h3><code>text-overflow</code></h3>
+    <p>Define a orientação do texo</p>
+    <p id="overflow">Chega de saudade a realidade é que sem ela não já de ser</p>
+</body>
+</html>

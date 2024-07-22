@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .exemplo{
+            background-color: palevioletred;
+        }
+    
+        .block{
+            display: block;
+        }
+
+        .inline{
+            display: inline;
+        }
+        .inline-block{
+            /* voce consegue definir a altura e largura dos elementos */
+            display: inline-block;
+            width: 100px;
+            padding: 30px;
+            margin: 5px;
+        }
+        .menu{
+
+            background-color: plum;
+        }
+        .menu ul li{
+            display: inline-block;
+            padding: 20px 40px;
+        }
+
+        .menu ul li a{
+           text-decoration: none;
+           color: black;
+        }
+
+        .none{
+            display: none;
+        }
+        .visibility{
+            display: inline-block;
+            visibility: hidden;
+        }
+
+    </style>
+    <title>Display</title>
+</head>
+<body>
+    <h1>Propriedade display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    
+    <h2>Exemplos:</h2>
+    <code>display: block</code>
+    <br><br>
+    <div class="exemplo block">Exemplo Bloco 01</div>
+    <div class="exemplo block">Exemplo Bloco 02</div>
+    <p class="exemplo block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, adipisci quam delectus pariatur cupiditate commodi doloremque quidem, labore culpa incidunt rem quas odio architecto porro quasi officia. Explicabo, vero eum!</p>
+    
+    <code>display: inline</code>
+    <br><br>
+    <span class="exemplo inline">Exemplo Inline 01</span>
+    <span class="exemplo inline">Exemplo Inline 02</span>
+    <em class="exemplo inline">Exemplo Inline 03: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio est quaerat repellendus.</em><b class="exemplo">Exemplo Inline 04</b>
+    <br><br>
+    
+    
+    <code>display: inline-block</code>
+    <br><br>
+    <span class="exemplo inline-block">Exemplo Inline 01</span>
+    <em class="exemplo inline-block">Exemplo Inline 02 </em>
+    <b class="exemplo inline-block">Exemplo Inline 03</b>
+    <span class="exemplo inline-block">Exemplo Inline 01</span>
+    <em class="exemplo inline-block">Exemplo Inline 02 </em>
+    <b class="exemplo inline-block">Exemplo Inline 03</b>
+
+    <p>Lorem ipsum dolor <b class="inline-block exemplo">sit amet</b> consectetur adipisicing elit. Numquam rem iure, quis ipsum distinctio dignissimos? Ipsam necessitatibus corporis similique error vitae, neque exercitationem itaque obcaecati inventore numquam facilis nesciunt in.</p>
+
+
+    <br><br><br>
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Menu link 01</a></li>
+            <li><a href="#">Menu link 02</a></li>
+            <li><a href="#">Menu link 03</a></li>
+          </ul>
+    </nav>
+
+    <code>display:none</code>
+    <div class="none exemplo">Elemento 01</div>
+    <div class=" exemplo">O elemento acima pode ser escondido</div>
+    <code>display:none vs visibility: hidden</code>
+    <p>Funciona semelhante ao display: none mas diferente dele o visibility mantem o espaço onde estava o elemento que foi escondido</p>
+    <span class="exemplo">Elemento 01</span>
+    <span class="visibility exemplo">Elemento 02</span>
+    <span class="exemplo">Elemento 03</span>
+
+
+</body>
+</html>

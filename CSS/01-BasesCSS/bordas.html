@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efeitos</title>
+    <style>
+   
+    .exemplo{
+        width: 200px;
+        height: 200px;
+       background-color: black;
+       border: 30px solid;
+    }
+
+    #exemplo-resumido{
+        border-image-source: url('./img/paris.jpg') 169 / 40px / 1 round;
+        
+    }
+
+    #exemplo-1{
+        border-image-source: url(./img/paris.jpg) ;
+        border-image-repeat: repeat;
+        /* border-image-outset: 30px;
+        faz a imagem ficar em volta da div */
+        /* border-image-repeat: round; */
+        /* redimencionar pra acbeer certinho */
+        border-image-slice: 169;
+        border-image-width: 40px ;
+    }
+    #exemplo-2{
+        border-image-source: linear-gradient(rgb(158, 67, 255), rgb(27, 27, 167));
+        border-image-slice: 40;
+    }
+      
+        </style>
+  </head>
+  <body>
+    <h1>Bordas com Imagens</h1>
+        <ul>
+            <li>border-image-source</li>
+            <li>border-image-width</li>
+            <li>border-image-repeat</li>
+            <li>border-image-outset</li>
+            <li>border-image-slice</li>
+        </ul>
+
+        <h2>Exemplo:</h2>
+        <div id="exemplo-resumido" class="exemplo">
+        </div>
+        <br>
+        <div id="exemplo-1" class="exemplo">
+        </div>
+        <br>
+        <div id="exemplo-2" class="exemplo">
+        </div>
+    </body>
+</html>
