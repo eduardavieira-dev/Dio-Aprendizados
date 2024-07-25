@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox exemplos</title>
+    <style>
+
+        .container{
+            background-color: palegreen;
+            margin: 20px;
+            width:300px;
+            height: 250px;
+            padding: 10px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10%;
+        }
+
+        .item{
+            background-color: palevioletred;
+        }
+        #container-01{
+            flex-direction: row;
+        }
+        #container-02{
+            flex-direction: column;           
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container" id="container-01">
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+    <div class="item">Item 03</div>
+    <div class="item">Item 04</div>
+    <div class="item">Item 05</div>
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+    <div class="item">Item 03</div>
+    <div class="item">Item 04</div>
+    <div class="item">Item 05</div>
+   </div>
+   <div class="container" id="container-02">
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+    <div class="item">Item 03</div>
+    <div class="item">Item 04</div>
+    <div class="item">Item 05</div>
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+    <div class="item">Item 03</div>
+    <div class="item">Item 04</div>
+    <div class="item">Item 05</div>
+   </div>
+</body>
+</html>

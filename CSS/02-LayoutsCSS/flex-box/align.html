@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox exemplos</title>
+    <style>
+
+        .container{
+            text-align: center;
+            display: inline-flex;
+            background-color: palegreen;
+            margin: 20px;
+            width: 300px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-items: stretch;
+        }
+
+        .item{
+            background-color: palevioletred;
+            margin: 10px;
+        }
+        #container-01{
+            height: 300px;
+            flex-flow: row wrap;
+        }
+        #container-02{
+            height: 300px;
+            flex-flow: column wrap-reverse;
+        }
+        /* .item-1{
+            width: 50px;
+            height: 50px;
+        } */
+        .item-2{
+            width: 80px;
+            height: 80px;
+        }
+        .item-3{
+            width: 40px;
+            height: 40px;
+            order: -1;
+            /* voce pode mexer na ordem dos itens */
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container" id="container-01">
+    <div class="item item-1">Item 01</div>
+    <div class="item item-2">Item 02</div>
+    <div class="item item-3">Item 03</div>
+</div>
+<div class="container" id="container-02">
+    <div class="item item-1">Item 01</div>
+    <div class="item item-2">Item 02</div>
+    <div class="item item-3">Item 03</div>
+   </div>
+</body>
+</html>
