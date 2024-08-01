@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-template-areas: 
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
+        }
+        header{
+            background: orange;
+            grid-area: header;
+        }
+        main{
+            background: deepskyblue;
+            grid-area: main;
+        }
+        aside{
+            background: lightcoral;
+            grid-area: sidebar ;
+        }
+        footer{
+            background: yellowgreen;
+            grid-area: footer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>header</header>
+    <main>main</main>
+    <aside>sidebar</aside>
+    <footer>footer</footer>
+</body>
+</html>

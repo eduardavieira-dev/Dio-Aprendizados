@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+            width: 100px;
+            display: inline-grid;
+            grid-template-columns: min-content max-content;
+
+        }
+        .item{
+            background: palegreen;
+        }
+        .container-01{
+            background: yellow;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+            
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);   
+            grid-template-columns: 1fr 2fr 1fr;   
+            grid-template-rows: 300px 200px; 
+            
+            /* todas as linhas criadas depois das que já receberam um valor definido terão esse valor */
+            grid-auto-rows: 300px;
+        }
+        .item{
+            border: 1px solid black;
+        }
+        
+        .item-01{
+            background: palevioletred;
+        }
+        .item-02{
+            background: cornflowerblue;
+        }
+        .item-03{
+            background: palegreen;
+        }
+        .item-04{
+            background: orange;
+        }
+        .item-05{
+            background: cadetblue;
+        }
+        .item-06{
+            background: cyan;
+        }
+        .item-07{
+            background: red;
+        }
+        .container-02{
+            background: powderblue;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+            
+            display: grid;      
+            grid-auto-rows: minmax(100px, auto);
+
+            grid-template-columns: minmax(50px, 200px) minmax(50px, 300px);
+            grid-template-columns:repeat(3, minmax(50px, 300px)) ;
+            
+        }
+        </style>
+    <title>Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Textooooo grande</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">max content</div>
+        <div class="item">Item 03</div>
+    </div>
+    <div class="container-01">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+    <div class="container-02">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Minmax(100px, auto) Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda voluptate possimus expedita autem! Voluptatibus tempore asperiores porro est velit debitis accusamus, soluta quisquam minus pariatur similique deserunt corrupti id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda voluptate possimus expedita autem! Voluptatibus tempore asperiores porro est velit debitis accusamus, soluta quisquam minus pariatur similique deserunt corrupti id!</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url(./reset.css);
+
+body{
+    display: grid;
+    background: #f4f4f4;
+    grid: "nav nav nav nav nav" 50px 
+        "aside main main main main" 900px
+        /200px 2fr 2fr 2fr 2fr;
+}
+
+nav{
+    background: #ffff;
+    grid-area: nav;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+.logo{
+    align-self: center;
+    margin: 20px;
+}
+.perfil{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+#search{
+    background: #F8F8F8;
+    border: 0;
+    padding: 8px 18px;
+    border: 1px solid #CCCCCC;
+}
+#search:hover{
+    cursor: pointer;
+    background: #e4e4e4;
+}
+input{
+    border: 1px solid #CCCCCC;
+    padding: 11px 100px;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    outline: none;
+    align-self: center;
+    
+}
+.pesquisa{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    align-self: center;
+} 
+
+.item{
+    display: flex;
+    padding: 10px;
+    place-items: center;
+    gap: 10px;
+}
+aside{
+    grid-area: aside;
+    /* justify-self: center; */
+    background: rgb(255, 255, 255);
+}
+
+main{
+    /* background: rgb(173, 255, 195); */
+    grid-area: main;
+    padding: 30px;
+}
+
+.videos{
+    display: grid;           
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    grid-template-rows: 250px 250px; 
+    grid-auto-rows: 250px;
+}
+
+.video{
+    padding: 0 10px;
+    max-width: 260px;
+    font-size: 14px;
+}
+.video p{
+    margin: 5px 0;
+    max-width: 240px;
+    font-size: small;
+}
+
+.video img{
+    width: 240px;
+}
+
+.infos{
+    display: flex;
+}
+
+.text{
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    
+}
+
+.text img{
+    display: flex;
+    max-width: 45px;
+    place-self: start;
+}

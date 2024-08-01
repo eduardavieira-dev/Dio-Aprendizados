@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            border: 2px solid;
+            height: 80vh;
+            /* grid-template: repeat(3, 1fr)/ repeat(3,1fr); */
+            grid-template: repeat(3, 100px)/ repeat(3, auto);
+
+            /* align-items: start;
+            justify-items: center; */
+
+            /* simplificando */
+            place-items: start center;
+
+            /* justify-content: space-evenly;
+
+            align-content: center;
+            align-content: space-around; */
+
+            place-content: center space-between;
+
+
+
+        }
+        .container{
+            border: 1px solid black;
+        }
+        .item{
+            background: paleturquoise;
+        }
+        .self{
+            background: green;
+            /* align-self: stretch; 
+            justify-self: stretch; */
+
+            place-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Espaçamento entre linhas e colunas</h1> -->
+
+        <div class="item">Ana Paula</div>
+        <div class="item">Rebeca Lopes Oliveira</div>
+        <div class="item">Pedrfo Jacinto</div>
+        <div class="item">André Gomes</div>
+        <div class="item self">Alice Pereira Alves</div>
+        <div class="item">Camila Gonçalves </div>
+        <div class="item">Sofia Antonieta</div>
+        <div class="item">Kaio Ribeiro</div>
+        <div class="item">Michele Ambrosio</div>
+
+</body>
+</html>

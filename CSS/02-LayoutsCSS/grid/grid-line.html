@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 2px solid;
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+            grid-template-rows: 50px 100px 200px;
+            margin-bottom: 20px;
+        }
+        .item{
+            text-align: center;
+            background: orange;
+            border-radius: 9px;
+            box-shadow: inset 4px 5px 20px rgb(186, 104, 56);
+            color: white;
+            
+            
+            grid-column-start: 2;
+            grid-column-end: 5;
+            
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .item-01{
+            text-align: center;
+            background:deepskyblue;
+            box-shadow: inset 4px 5px 20px rgb(56, 125, 186);
+            color: white;
+            border-radius: 9px;
+            
+            /* grid-column-start: 1;
+            grid-column-end: span 3; */
+
+
+            grid-column: 1/ span 3;
+            /* forma simplificada */
+
+
+            grid-row-start: 2;
+            grid-row-end: span 2;
+            /* não precisa contar a linha só os blocos */
+
+        }
+
+
+        .container-01{
+            border: 2px solid;
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+
+
+            /* outra maneira de nomear */
+            grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+            grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+
+
+        }
+        
+        .itens{
+            text-align: center;
+            background-color: deeppink;
+        }
+        .item-1{
+            background-color: aqua;
+            
+            grid-column: 3/ 3;
+            grid-row: 2/ span 1;
+
+            
+            grid-column: segunda-linha-col/terceira-linha-col;
+            grid-row: linha-meio/ linha-fim;
+        }
+        
+        </style>
+    <title>Grid Posicionamentos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item-a</div>
+    </div>
+
+    <div class="container">
+        <div class="item-01">item-b</div>
+    </div>
+    
+    <div class="container-01">
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+        <div class="itens item-3"></div>
+        <div class="itens item-4"></div>
+        <div class="itens item-6">/div>
+        <div class="itens item-5"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #23272A;
+    font-family: Arial;
+}
+
+header h1{
+    padding: 30px;
+    max-width: 300px;
+    place-self: center;
+}
+
+header p{
+    text-align: justify;
+    place-self: center;
+    max-width: 1000px;
+}
+
+
+
+header .hero {
+    background: url('../img/Header\ Background.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-family: "Luckiest Guy", cursive;
+    /* text-align: center; */
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #23272A;
+}
+
+.btn-secondary {
+    background-color: #23272A;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 40px;
+    color: #23272A;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+
+section h3{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+/* 
+section img{
+    max-width: 20rem;
+    margin: auto;
+    place-self: center;
+    
+    } */
+    
+    section img{
+        max-width: 100%;
+        align-content: center;
+    }
+    
+    section .text{
+    max-width: 100%;
+}
+.max {
+    place-items: center;
+}
+
+.aqui{
+    background: #F6F6F6;
+    display: flex;
+    margin: auto;
+}
+
+.tecnologia img{
+    margin:auto; 
+    display: flex;
+}
+section .para{
+    flex-direction: row;
+    display: flex;
+}
+
+
+footer{
+    height: 140px;
+    background: #23272A;
+    margin: auto;
+    display: flex;
+}
+
+footer img{
+    max-width: 180px;
+    margin: auto;
+    place-self: center;
+ 
+}
+
+@media screen and (min-width: 790px)  {
+    section{
+        display: flex;
+        flex-direction: row;
+        max-width: 1900px;
+        height: 550px;
+        margin: auto;
+       padding: 20px;
+    }
+
+    .max{
+        align-items: start;
+        font-size: 20px;
+        place-items: center;
+    }
+  .text h3{
+        font-size: 2.5rem;
+
+    }
+    .max img{
+        place-self: center;
+        margin: 0 auto;
+    }
+   
+    section img {
+        max-width: 40rem;
+        height: 400px;
+        flex-wrap: wrap;
+        margin-right: 20px; /* Espaço entre a imagem e o texto */
+    }
+    
+    section .text {
+        flex: 1; /* Faz com que o texto ocupe o espaço restante */
+        max-width: 50%;
+    }
+    
+    .tecnologia{
+        margin: auto;
+        text-align: center;
+        max-width: 800px;
+    }
+    .para{
+        padding: 50px;
+    }
+    .max{
+        margin: auto;
+        display: flex;
+        max-width: 1000px;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header h1{
+        font-family: "Luckiest Guy", cursive;
+        padding: 30px;
+        text-align: center;
+        font-size: 3rem;
+        max-width: 300px;
+        place-self: center;
+    }
+    
+    header p{
+        text-align: center;
+        place-self: center;
+        max-width: 1000px;
+    }
+
+
+
+}
+
+
