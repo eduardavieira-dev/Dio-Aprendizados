@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code{
+            background: lightgray;
+        }
+        p::first-letter{
+            color: blueviolet;
+        }
+        ::first-letter{
+            color: aquamarine;
+        }
+        p::first-line{
+            font-size: medium;
+            text-transform: lowercase;
+        }
+        summary::marker{
+            color: red;
+            content: "➜";
+        }
+        li::marker{
+            content: "†";
+            color: blueviolet;
+        }
+        input::placeholder{
+            color: lightcoral;
+            text-transform: capitalize;
+        }
+        .exemplo{
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        input::file-selector-button{
+            border: 2px solid darkblue;
+            background-color: #6c5ce7;
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+        }
+        
+
+    </style>
+    <title>Pseudo-elementos</title>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página sem a necessidade de declara-lo no HTML, ou para selecionar uma parte de algum elemento.</p>
+
+    <p>identificador por <code>::paalavra-chave</code></p>
+
+    <h2>Pseudo-elemento- <code>::first-letter</code></h2>
+  
+    <p>Seleciona a primeira letra da primeira linha</p>
+    <p>Propriedades disponiveis:</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>padding</code></li>
+        <li><code>border</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+    
+    
+    <h2>Pseudo-elemento- <code>::first-line</code></h2>
+    <p>Seleciona a primeria linha de um texto</p>
+    <p>Propriedades disponiveis:</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati cum, deleniti ab qui facilis placeat expedita sunt dolor, quae nulla exercitationem sapiente rem magnam quo iure ducimus facere, quisquam cumque?</p>
+
+    <h2>Pseudo-elemento- <code>::backdrop</code></h2>
+    <p>Estiliza o plano de fundo de uma tela cheia como dialog ou video. quando a tela do video fica cheia voce pode mudar o fundo preto pra outra cor</p>
+
+    <h2>Pseudo elemento- <code>::marker</code></h2>
+    <p>Permite estilizar os topicos ou numeros de ula lista <code>(li)</code> ou entao a flrcha de um elemento <code>summary</code></p>
+    <details>
+        <summary>Propriedades aceitars:</summary>
+    </details>
+    <ul>
+        <li>color</li>
+        <li>content</li>
+        <li>white-space</li>
+        <li>font</li>
+        <li>animation</li>
+        <li>transition</li>
+    </ul>
+
+
+    <h1>Pseudo-elemento- <code>::placeholder</code></h1>
+    <p>Um placxe holder é uma dica para ajudar no preenchimento de algum campo de formulário</p>
+    <p>Propriedades aceitas:</p>
+    <ul>
+        <li>color</li>
+        <li>font</li>
+        <li>background</li>
+        <li>text</li>
+    </ul>
+    <p>Exemplo:</p>
+    <label for="nome">Nome</label>
+    <input 
+    name="nome" 
+    type="text"
+    placeholder="Ex: Fulano de tal">
+    <label for="senha">Senha</label>
+    <input 
+    name="senha"
+    type="password" 
+    placeholder="Minimo de 10 caracteres">
+    
+    <h2>Pseudo-elemento- <code>::selection</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador. quando voce clicar pra selecionar o texto aparece</p>
+    <p>Propriedades aceitas:</p>
+    <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>text</li>
+    </ul>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos cumque praesentium omnis iste assumenda minus, magni dolore? Laboriosam quis recusandae enim maxime? Sapiente laborum a veniam nesciunt, incidunt libero necessitatibus!</p>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos cumque praesentium omnis iste assumenda minus, magni dolore? Laboriosam quis recusandae enim maxime? Sapiente laborum a veniam nesciunt, incidunt libero necessitatibus!</p>
+
+    <h2>Pseudo-elemento- <code>::dile-selector-button</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador.</p>
+    <form>
+        <label for="fileUpload">Upload de arquivo</label>
+        <input name="fileUpload" type="file">
+    </form>
+
+
+
+</body>
+</html>

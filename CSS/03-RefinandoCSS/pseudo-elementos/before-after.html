@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::before{
+            content: "🕀";
+            color: green;
+        }
+        p::after{
+            content: "🕀";
+        }
+        .card-image{
+            width: 300px;
+            height: 300px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background: url(./fa054e11073589ecc10c18d4c5c566cf.jpg);
+            background-size: cover;
+            position: relative;
+            /* o pai sempre tem que ser relative */
+            overflow: hidden;
+        }
+        .card-image::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(transparent, rgb(236, 109, 160));
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Exemplo 1</p>
+    <p>Exemplo 2</p>
+    <p>Exemplo 3</p>
+
+    <div class="card-image">
+
+    </div>
+    
+</body>
+</html>

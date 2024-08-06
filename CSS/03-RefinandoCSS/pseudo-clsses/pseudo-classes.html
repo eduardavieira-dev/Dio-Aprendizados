@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code{
+            background: lightgray;
+        }
+        button{
+            background-color: lightpink;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+        }
+        button:hover{
+            background-color: lightseagreen;
+            filter: drop-shadow(5px 5px 5px lightseagreen);
+            cursor: pointer;
+        }
+        .botao:active{
+            background-color: purple;
+            color: beige;
+        }
+        a:active{
+            background-color: pink;
+            color: black;
+        }
+        label{
+            display: block;
+            margin: 12px;
+            font-size: 1rem;
+        }
+        input, select{
+            font-size: 1rem;
+        }
+        input:focus{
+            outline: 2px dashed blue;
+        }
+        select:focus{
+            background-color: plum;
+        }
+        button:focus{
+            outline: 3px solid red;
+        }
+        label:focus-within{
+            font-weight: bold;
+        }
+        p:target{
+            background-color: gold;
+        }
+        p:target::before{
+            content: "▷";
+            color: red;
+            margin: 10px;
+        }
+        .exemplo:link{
+            color: limegreen;
+            background: black;
+        }
+        a:visited{
+            color: palevioletred;
+        }
+    </style>
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes | <code>:hover</code></h1>
+    
+    <button>Entrar em contato</button>
+    
+    <h1>Pseudo-classes | <code>:active</code></h1>
+    <p>voce pode altera a estilização quando algo estiver ativo, ou até mesmo alterar a codição ativa do elemento no JS</p>
+    <button class="botao">Entrar em contato</button>
+    <a href="#">Site da Dio</a>
+    
+    <h1>Pseudo-classes | <code>:focus, :focus-within e :focus-visible</code></h1>
+    <form>
+        <p>É a bprda preta que fica em volta do elemento indicando que ele esta em foco</p>
+        <p>Faça seu pedido! Escolha o sabor do sorvete que voce deseja</p>
+        <label for="">Nome completo:
+            <input name="nome" type="text">
+        </label>
+        <label>
+            Sabor do sorvete:
+        </label>
+        <select name="sabor" id="">
+            <option value="chocolate">chocolate</option>
+            <option value="morango">morango</option>
+            <option value="baunilha">baunilha</option>
+        </select>
+    </form>
+    
+    <h1>Pseudo-classes | <code>:target</code></h1>
+    <h2>Table of contents</h2>
+    <ol>
+        <li><a href="#p1">Pular para o primeiro paragrafo</a></li>
+        <li><a href="#p2">Pular para o segundo paragrafo</a></li>
+        
+    </ol>
+    <h2>Meu artigo</h2>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae, id sint rerum a quod, excepturi facere, ratione corrupti praesentium assumenda architecto incidunt quam suscipit distinctio voluptatibus debitis fugit omnis?</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae, id sint rerum a quod, excepturi facere, ratione corrupti praesentium assumenda architecto incidunt quam suscipit distinctio voluptatibus debitis fugit omnis?</p>
+
+    <h1>Pseudo-classes | <code>:link e :visited</code></h1>
+    <a class="exemplo" href="#">Me siga no instagram</a>
+    <a href="#">Instagram</a>
+</body>
+</html>

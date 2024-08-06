@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        article :nth-child(1){
+            color: red;
+        }
+        article p:nth-of-type(1){
+            color: blue;
+        }
+        li:nth-child(even){
+            color: aqua;
+        }
+        li:nth-child(odd){
+            color: gray;
+        }
+        li:nth-child(3n+1){
+            color: lightblue;
+        }
+
+
+        li:first-of-type{
+            background-color: lightseagreen;
+        }
+        li:last-of-type{
+            background-color: cornflowerblue;
+        }
+
+        li:nth-child(-n+3){
+            font-weight: bold;
+            color: purple;
+        }
+        li:only-child{
+            color: rgb(221, 86, 221);
+        }
+        p:only-child{
+            color: rgb(221, 86, 221);
+
+        }
+        div :only-of-type{
+            color: rgb(201, 61, 114);
+        }
+
+        li:not(:first-child, :last-child){
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input name="task-1" type="checkbox">
+        <label for="task-1">:nth-child</label>
+    </div>
+    <div>
+        <input name="task-2" type="checkbox">
+        <label for="task-2">:nth-of-type</label>
+    </div>
+<hr>
+<article>
+    <span>Teste -span</span>
+    <p class="exemplo">I am the first paragraph.!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae iusto nisi adipisci totam.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nam, laboriosam ea cupiditate excepturi.
+    </p>
+    <p class="exemplo">I am the last paragraph.!</p>       
+</article>
+
+<hr>
+
+<div class="listas">
+    <ul id="lista-1">
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+        <li>Item 06</li>
+        <li>Item 07</li>
+        <li>Item 08</li>
+        <li>Item 09</li>
+        <li>Item 010</li>
+    </ul>
+</div>
+<div class="listas">
+    <ul id="lista-2">
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+        <li>Item 06</li>
+        <span>sou um unico item</span>
+        <li>Item 07</li>
+        <li>Item 08</li>
+        <li>Item 09</li>
+        <li>Item 010</li>
+    </ul>
+</div>
+
+<hr>
+<ul>
+    <li>Sou um only child</li>
+</ul>
+<hr>
+<div>
+    <p>only-child também</p>
+</div>
+    
+</body>
+</html>

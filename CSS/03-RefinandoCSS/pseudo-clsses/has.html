@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 300px;
+            object-fit: cover;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        figcaption{
+            font-size: 0.75rem;
+        }
+        .gallery figure{
+            box-shadow: 0 0 5px 2px lightgray;
+        }
+        .gallery figure:has(figcaption){
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .gallery figure:not(:has(figcaption)){
+            border: 1px solid deeppink;
+            border-radius: 4px;
+            padding: 8px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pseud-classe <code>:has</code></h1>
+    <div class="gallery">
+        <figure class="image">
+            <img width="100" src="../pseudo-elementos/fa054e11073589ecc10c18d4c5c566cf.jpg" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure class="image">
+            <img width="100" src="../pseudo-elementos/fa054e11073589ecc10c18d4c5c566cf.jpg" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure class="image">
+            <img width="100" src="../pseudo-elementos/fa054e11073589ecc10c18d4c5c566cf.jpg" alt="">
+                  
+        </figure>
+    </div>
+
+</body>
+</html>

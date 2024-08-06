@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input:placeholder-shown{
+            border-color: royalblue;
+            background-color: royalblue;
+        }
+        input::placeholder{
+            color: white;
+        }
+        input{
+            accent-color: red;
+        }
+        input:checked{
+            box-shadow: 0 0 5px red;
+        }
+
+        /* input:checked + label{
+            color: red;
+            text-decoration: line-through;
+        } */
+        input[type="checkbox"]:checked + label{
+            text-decoration: line-through;  
+        }
+        
+        input[type="radio"]{
+            accent-color: blue;
+        }
+        input[type="radio"]:checked + label{
+        color: blue;
+        }
+        option{
+            color: blueviolet;
+            font-weight: bold;
+        }
+        progress:indeterminate{
+            accent-color: red;
+        }
+        input:-webkit-autofill{
+            border: 2px solid plum; 
+        }
+
+
+        div{
+            height: 16px;
+            background-color: palegreen;
+        }
+        #elemento-content::before{
+            content: "!!!!!";
+        }
+        div:empty{
+            border: 2px solid deeppink;
+        }
+
+        .post :is(h2, li, .red){
+            color: deeppink;
+        }
+
+        :is(article, section) p {
+            background-color: lightblue;
+        }
+        .not{
+            display: flex;
+        }
+        .not p:not(.irrelevante){
+            color: darkblue;
+        }
+       
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pseudo-classes | <code>:placeholder-shown</code></h1>
+    <label for="">Nome completo:
+    </label>
+    <input type="text" name="" id="">
+    <label for="email"  >E-mail:
+    </label>
+    <input type="email" placeholder="name@example.com">
+    <label for="">Sua idade</label>
+    <input type="number" value="18" placeholder="sua idade deve ser +18">
+    
+    <h1>Pseudo-classes | <code>:checked e :indeterminate</code></h1>
+    <div>
+        <input name="task-1" type="checkbox">
+        <label for="task-1">Tarefa 01</label>
+        <input name="task-2" type="checkbox">
+        <label for="task-2">Tarefa 02</label>
+        <input name="task-3" type="checkbox">
+        <label for="task-3">Tarefa 03</label>
+    </div>
+    <hr>
+    
+    <input type="radio" name="genero">
+    <label for="feminino">feminino</label>
+    <input type="radio" name="genero">
+    <label for="masculino">masculino</label>
+    
+    <hr>
+    
+    <select name="sabor" id="">
+        <option value="chocolate">chocolate</option>
+        <option value="morango">morango</option>
+    </select>
+    <hr>
+    <progress></progress>
+
+    <h1>Pseudo-classes | <code>:autofill e :-webkit-autofill</code></h1>
+    <p>vai adicionar as propriedades quando seu campo aparecer opções de autocompletar(preenchimento automatico) e voce selecionar</p>
+    <div>
+        <label for="">nome:
+        </label>
+        <input type="text">
+    </div>
+    <h1>Pseudo-classes | <code>:root</code></h1>
+    <p>representa o elemento raiz. Cria variaveis e valores customisados é o mesmo que usar html. Muito usado no reset css</p>
+
+    <h2>Pseudo-classes <code>:empty</code></h2>
+    <p>Elemento sem conteúdo:</p>
+    <div></div>
+    <p>Elemento com comentário:</p>
+    <div>
+        <!-- um comentario -->
+    </div>
+    <p>Elemento com espaço em branco:</p>
+    <div> </div>
+    <p>Elemento com elemento vazio dentro dele</p>
+    <div>
+        <p></p>
+    </div>
+    <p>Elemento com propriedade content:</p>
+    <div id="elemento-content"></div>
+
+    <h2>Pseudo-classes <code>:is</code></h2>
+    <div class="post">
+        <h2>Meu post</h2>
+        <p>Sumário:</p>
+        <ul>
+            <li>cap 1</li>
+            <li>cap 2</li>
+            <li>cap 3</li>
+        </ul>
+        <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, officia dolore nam reprehenderit fugit atque, dolorem minus fuga quaerat neque porro perspiciatis nesciunt nisi expedita. Asperiores quasi eaque nostrum sapiente!</p>
+        <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, officia dolore nam reprehenderit fugit atque, dolorem minus fuga quaerat neque porro perspiciatis nesciunt nisi expedita. Asperiores quasi eaque nostrum sapiente!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, officia dolore nam reprehenderit fugit atque, dolorem minus fuga quaerat neque porro perspiciatis nesciunt nisi expedita. Asperiores quasi eaque nostrum sapiente!</p>
+        <article>
+            <h4>article</h4>
+            <p>ex 1</p>
+        </article>
+        <section>
+            <h4>section</h4>
+            <p>ex 2</p>
+        </section>
+        <h3>O :is é mais forte já o :where é mais fácil de ser sobre-escrito por um seletor comum</h3>
+    </div>
+
+    <hr>
+    <div class="not">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolore impedit odio ipsam esse exercitationem aliquid, placeat, sed deserunt quia illo quis ad doloribus dicta cumque! Alias fugiat vero pariatur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolore impedit odio ipsam esse exercitationem aliquid, placeat, sed deserunt quia illo quis ad doloribus dicta cumque! Alias fugiat vero pariatur!</p>
+        <p class="irrelevante">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolore impedit odio ipsam esse exercitationem aliquid, placeat, sed deserunt quia illo quis ad doloribus dicta cumque! Alias fugiat vero pariatur!</p>
+    </div>
+</body>
+</html>
