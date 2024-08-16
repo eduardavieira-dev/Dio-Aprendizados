@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+           
+        }
+        .box{
+            background: linear-gradient(90deg, rgb(255, 199, 136), rgb(231, 255, 182), rgb(241, 121, 191));
+            width: 200px;
+            height: 200px;
+            border-radius: 7%;
+            transition: 2s;
+            transform-origin: left top;  
+
+        }
+        .box:hover{
+            transform: rotate(40deg);
+            /* transform: scale(1.2); */
+        }
+      
+    </style>
+    <title>Elementos 3d</title>
+</head>
+<body>
+    <!-- <p>Os elementos filhos terão a impressao de perscpectividade e não o elemento que a gente aplicou a propriedade em si</p> -->
+    <div class="box">transform-origin</div>
+    
+</body>
+</html>

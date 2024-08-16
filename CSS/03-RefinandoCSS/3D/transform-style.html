@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+            perspective-origin: top;
+            transform-style:preserve-3d;
+        }
+        .box{
+            
+            width: 200px;
+            height: 200px;
+            border-radius: 7%;
+            position: absolute;
+            
+            
+       
+
+        }
+        .box:nth-child(1){
+            background: linear-gradient(to right, pink, darkblue);
+            transform: rotateY(40deg);
+        }
+        .box:nth-child(2){
+            background: linear-gradient(to right, lightblue, darkblue);
+            transform: rotateY(-40deg);
+        }
+
+      
+    </style>
+    <title>Elementos 3d</title>
+</head>
+<body>
+    <div class="box">transform-style</div>
+    <div class="box">transform-style</div>
+    
+</body>
+</html>
