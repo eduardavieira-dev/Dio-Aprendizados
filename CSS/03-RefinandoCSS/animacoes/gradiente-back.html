@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap');
+        body{
+            font-family: "Quicksand", sans-serif; 
+            margin: 0;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(-45deg, #d53369, #ffced7 );
+            background-size: 400% 400%;
+            animation: gradient 5s infinite alternate;
+        }
+        
+        h1{
+            font-size: 3rem;
+            margin: 0;
+            position: relative;
+            bottom: 40px;
+            
+        }
+        
+        .gradient-word{
+            font-family: "Pinyon Script", cursive;
+            margin: 0;
+            font-size: 2.5rem;
+            /* line-height: 1; */
+
+            background: linear-gradient(0deg, transparent, rgba(24, 24, 24, .4));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+
+        @keyframes gradient {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 50% 100%;
+            }
+            100%{
+                background-position: 100% 0%;
+                
+            }
+        }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <p class="gradient-word">Eduarda Vieira</p>
+        <h1>show me the code</h1>
+    </blockquote>
+    
+</body>
+</html>

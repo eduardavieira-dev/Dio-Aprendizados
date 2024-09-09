@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+           
+        }
+        .box{
+            background:  rgb(241, 121, 191);
+            width: 200px;
+            height: 200px;
+            border-radius: 7%;
+            /* animation-duration: 3s;
+            animation-name: mudar-fundo ;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; 
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards; */
+
+            animation: mudar-fundo 5s linear 2s infinite alternate;
+
+        }
+
+        @keyframes mudar-fundo {
+            0%{
+                background-color: rgb(180, 237, 100);
+                width: 200px;
+                height: 180px;
+            }
+            50%{
+                background-color: rgb(123, 0, 139);
+                width: 500px;
+                height: 400px;
+            }
+            100%{
+                background-color:darkslateblue;
+                width: 600px;
+                height: 500px;
+            }
+        }
+
+
+        
+      
+    </style>
+    <title>Animações</title>
+</head>
+<body>
+   
+    <div class="box"></div>
+    
+</body>
+</html>

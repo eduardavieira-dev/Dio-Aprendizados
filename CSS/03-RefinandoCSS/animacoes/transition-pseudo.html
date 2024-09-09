@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .list{
+            padding: 0;
+            background-color: #d53369;
+            padding: 12px 32px;
+            border-radius: 8px;
+            box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.327);
+        }
+        .list li{
+            list-style: none;
+            color: white;
+            padding: 12px 32px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            transition: background .7s;
+        }
+        
+        .list li:hover{
+            background-color: #cc285f;
+        }
+        
+        .list input{
+            accent-color: yellow;
+            cursor: pointer;
+        }
+
+        .list input:checked + span{
+            text-decoration: line-through;
+        }
+        .list li:has(input:checked){
+            background-color: rgba(255, 255, 0, 0.692);
+            border-radius: 8px;
+            color: #cc285f;
+        }
+    </style>
+    <title>Transition Pseudo-elementos</title>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Chocolate</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Morango</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Baunilha</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Maracujá</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Menta</span>
+            </label>
+        </li>
+    </ul>
+    
+</body>
+</html>
