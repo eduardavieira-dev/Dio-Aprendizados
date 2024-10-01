@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --font-size-title: 5rem;
+            --box-shadow:5px 5px 5px lightgrey;
+        }
+        .light-theme {
+            --bg-gradiente: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            --bg-body: rgb(241, 241, 241);
+        }
+        .dark-theme {
+            --bg-gradiente: linear-gradient(90deg, #FC466B 0%, #fb8d3f 100%);
+            --bg-body: rgb(34, 34, 34);
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bg-body);
+            text-align: center;
+        }
+        h1 {
+            background: var(--bg-gradiente);
+            font-size: var(--font-size-title);
+            text-align: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            max-width: 500px;
+            margin: 100px auto;
+        }
+        a {
+            text-decoration: none;
+            background: var(--bg-gradiente);
+            padding: 8px 14px;
+            border-radius: 4px;
+            color: #fafafa;
+            box-shadow: var(--box-shadow);
+        }
+
+        /* BEM CSS */
+        .menu{
+            background-color: black;
+        }
+        .menu__list{
+            margin: 0;
+            padding: 24px 0;
+        }
+        .menu__item{
+            display: inline-block;
+            color: white;
+            margin: 0 16px;
+        }
+
+        .menu__item--active{
+            font-weight: bold;
+            color: #FC466B;
+        }
+
+    </style>
+</head>
+<body class="light-theme">
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--active">Inicio</li>
+            <li class="menu__item">Sobre Nós</li>
+            <li class="menu__item">Conato</li>
+            <li class="menu__item"><a href="" class="menu__link">Entrar</a></li>
+        </ul>
+
+    </nav>
+    <h1>Digital Innovation One</h1>
+    <a href="#" onclick="toggleTheme()">Alternar Tema</a>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('light-theme');
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>
